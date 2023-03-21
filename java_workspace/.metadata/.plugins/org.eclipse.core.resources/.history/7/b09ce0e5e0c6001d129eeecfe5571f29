@@ -1,0 +1,28 @@
+package day17;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+public class BufferedReader03 {
+
+	public static void main(String[] args) throws IOException {
+		/* out.txt파일을 읽어들여 map에 저장 후
+		 * 이름 : 점수
+		 * 총합계 총인원 출력
+		 */
+		BufferedReader br = new BufferedReader(new FileReader("out.txt"));
+		Map<String, Integer> std = new HashMap<String, Integer>();
+		
+		while(true) {
+			
+		}
+		
+		
+
+	}
+
+}

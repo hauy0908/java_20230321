@@ -1,0 +1,19 @@
+package day16;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+/* 1.단어 추가
+ * 2.단어 출력
+ * 
+ */
+
+public class EnglishDictionary {
+	
+}
+
+class Word{
+	
+	private Map<String, ArrayList<String>> word = new HashMap<String, ArrayList<String>>();
+	
+}

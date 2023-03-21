@@ -1,0 +1,10 @@
+package day15;
+
+public class Q_Word {
+/* 단어장 프로그램 만들기
+ * Word class
+ * 단어, 의미를 저장하는 클래스
+ * word, mean
+ * apple : 사과
+ */
+}

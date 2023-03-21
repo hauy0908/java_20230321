@@ -1,0 +1,30 @@
+package day16;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class StreamEX03 {
+	ArrayList<Student> std = new ArrayList<Student>();
+	
+	public void printName() {
+		std.add(new Student("홍길동",90));
+		std.add(new Student("강감찬",87));
+		std.add(new Student("홍길순",76));
+		std.add(new Student("강길동",46));
+		std.add(new Student("강길순",67));
+	}
+	
+	public void addStudent(Scanner scan) {
+		System.out.println("학생명 입력 : ");
+		String name = scan.next();
+		System.out.println("점수 입력 : ");
+		int score = scan.nextInt();
+		this.std.add(new Student(name,score));
+	}
+	
+	
+	
+	
+	
+	
+}

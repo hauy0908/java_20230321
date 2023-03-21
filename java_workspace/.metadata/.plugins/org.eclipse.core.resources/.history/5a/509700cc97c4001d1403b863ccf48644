@@ -1,0 +1,15 @@
+package day16;
+
+import java.util.ArrayList;
+
+public class TripMain {
+
+	public static void main(String[] args) {
+		ArrayList<TripCustomer> trip = new ArrayList<TripCustomer>();
+		trip.add(new TripCustomer("이순신",40,100));
+		trip.add(new TripCustomer("신사임당",35,100));
+		trip.add(new TripCustomer("이아들",10,50));
+
+	}
+
+}

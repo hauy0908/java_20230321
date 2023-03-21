@@ -1,0 +1,22 @@
+package day15__;
+
+public class Main {
+
+	public static void main(String[] args) {
+//		Student student = new Student();
+
+		System.out.println("안녕하세요. 수강관리 프로그램입니다.^_^");
+		System.out.println("메뉴를 선택해 주세요.");
+		System.out.println("1.학생등록");
+		System.out.println("2.학생확인(학생리스트)");
+		System.out.println("3.학생검색(한 학생의 정보가 출력)");
+		System.out.println("4.수강신청");
+		System.out.println("5.수강철회");
+		System.out.println("6.종료");
+		System.out.println("입력 : ");
+		switch() {
+		
+		}
+	}
+
+}

@@ -1,0 +1,140 @@
+package day15;
+
+public class Subject {
+	
+	 /* class - subject(별도 생성)
+	 * 과목클래스 : 한 과목의 정보를 나타내는 클래스
+	 * - 과목코드, 과목명, 학점, 시수, 교수명, 학기, 분류(교양, 전공), 수업 시간표, 강의실
+	 */
+	
+	private String subjectCode[] = {"52164","52569","78845","52698","98241"};  //과목코드
+	private String subjectName[] = {"아동미술","영유아교수론", "아동음악","놀이지도"};  //과목명
+	private int subjectCredit[] = {2,3,4};  //학점
+	private int professorTime[] = {2,3};  //시수
+	private String professorName[] = {"전우경","한가영","이하늘"};  //교수명
+	private int term[] = {1,2}; //학기
+	private String subjectCatecory[] = {"전공", "교양"};  //분류
+	private String classTime[] = {"월","화","수","목","금"};  //수업 시간표
+	private String classRoom[] = {"A","B","C","D","E"};  //강의실 
+
+//	void subject(String name, String code) {
+//		this.subjectName = subjectName;
+//	}
+	
+	public Subject(String[] subjectCode, String[] subjectName, int[] subjectCredit, int[] professorTime,
+			String[] professorName, int[] term, String[] subjectCatecory, String[] classTime, String[] classRoom) {
+		this.subjectCode = subjectCode;
+		this.subjectName = subjectName;
+		this.subjectCredit = subjectCredit;
+		this.professorTime = professorTime;
+		this.professorName = professorName;
+		this.term = term;
+		this.subjectCatecory = subjectCatecory;
+		this.classTime = classTime;
+		this.classRoom = classRoom;
+	}
+	
+	public void printSubjectInfo() {
+		System.out.println("-----과목 정보-----");
+		System.out.println("과목코드 : "+subjectCode);
+		System.out.println("과목명 : "+subjectName);
+		System.out.println("학점 : "+subjectCredit);
+		System.out.println("시수 : "+professorTime);
+		System.out.println("교수명 : "+professorName);
+		System.out.println("학기 : "+term);
+		System.out.println("분류 : "+subjectCatecory);
+		System.out.println("수업 시간표 : "+classTime);
+		System.out.println("강의실 : "+classRoom+"강의실");
+	}
+	
+
+	public void courseImformation() {
+		if(subjectName.length == 0 || cnt == 0 ){
+			System.out.println("과목이 없습니다.");
+			return;
+		}
+//		for(int i=0; i<cnt; i++) {
+//			System.out.print(printSubjectInfo());
+//		}
+	}
+
+	
+	
+	public String[] getSubjectCode() {
+		return subjectCode;
+	}
+
+	public void setSubjectCode(String[] subjectCode) {
+		this.subjectCode = subjectCode;
+	}
+
+	public String[] getSubjectName() {
+		return subjectName;
+	}
+
+	public void setSubjectName(String[] subjectName) {
+		this.subjectName = subjectName;
+	}
+
+	public int[] getSubjectCredit() {
+		return subjectCredit;
+	}
+
+	public void setSubjectCredit(int[] subjectCredit) {
+		this.subjectCredit = subjectCredit;
+	}
+
+	public int[] getProfessorTime() {
+		return professorTime;
+	}
+
+	public void setProfessorTime(int[] professorTime) {
+		this.professorTime = professorTime;
+	}
+
+	public String[] getProfessorName() {
+		return professorName;
+	}
+
+	public void setProfessorName(String[] professorName) {
+		this.professorName = professorName;
+	}
+
+	public int[] getTerm() {
+		return term;
+	}
+
+	public void setTerm(int[] term) {
+		this.term = term;
+	}
+
+	public String[] getSubjectCatecory() {
+		return subjectCatecory;
+	}
+
+	public void setSubjectCatecory(String[] subjectCatecory) {
+		this.subjectCatecory = subjectCatecory;
+	}
+
+	public String[] getClassTime() {
+		return classTime;
+	}
+
+	public void setClassTime(String[] classTime) {
+		this.classTime = classTime;
+	}
+
+	public String[] getClassRoom() {
+		return classRoom;
+	}
+
+	public void setClassRoom(String[] classRoom) {
+		this.classRoom = classRoom;
+	}
+	
+	
+	
+	
+	
+
+}

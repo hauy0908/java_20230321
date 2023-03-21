@@ -1,0 +1,15 @@
+package day16;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class EnglishDictionary {
+	
+}
+
+class Word{
+	
+	private Map<String, ArrayList<String>> word = new HashMap<String, ArrayList<String>>();
+	
+}

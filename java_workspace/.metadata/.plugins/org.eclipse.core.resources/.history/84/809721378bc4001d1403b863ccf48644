@@ -1,0 +1,14 @@
+package day16;
+
+public class Q_Student {
+	/* 학생 클래스 생성(Student)
+	 * - name, score
+	 * - 생성자, getter/setter
+	 * 
+	 * StreamEx03 클래스 생성
+	 * -ArrayList<Student> list 생성 후
+	 * list.add() 학생명, 점수 추가
+	 * 
+	 * 
+	 */
+}

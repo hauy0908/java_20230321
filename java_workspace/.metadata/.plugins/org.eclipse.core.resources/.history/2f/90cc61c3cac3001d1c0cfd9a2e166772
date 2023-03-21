@@ -1,0 +1,17 @@
+package day15;
+
+import java.util.ArrayList;
+
+public class WordManager implements WordInterface{
+
+	private ArrayList<Word> word = new ArrayList<>();
+	
+	public void addWord() {
+		word.add(new Word("apple","사과"));
+		word.add(new Word("car","차"));
+		word.add(new Word("banana","바나나"));	
+	}
+	
+	
+	
+}

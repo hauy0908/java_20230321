@@ -1,0 +1,32 @@
+package day15;
+
+public class Subject {
+	
+	 /* class - subject(별도 생성)
+	 * 과목클래스 : 한 과목의 정보를 나타내는 클래스
+	 * - 과목코드, 과목명, 학점, 시수, 교수명, 학기, 분류(교양, 전공), 수업 시간표, 강의실
+	 */
+	
+	private String subjectCode;  //과목코드
+	private String subjectName;  //과목명
+	private int subjectCredit;  //학점
+	private int teacherTime;  //시수
+	private String professorName;  //교수명
+	private int term; //학기
+	private String subjectCatecory;  //분류(교양, 전공)
+	
+	private String classRoom;  //강의실
+	
+	
+	public Subject() {}
+	public Subject() {
+		
+	}
+	
+	
+	
+	
+	
+	
+
+}

@@ -1,0 +1,5 @@
+package Prouduct;
+
+public class Order extends Product {
+
+}

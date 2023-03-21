@@ -1,0 +1,32 @@
+package Prouduct;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Product {
+	//1. Product class => 메뉴명, 가격
+	
+	private HashMap<String, Integer> menuList = new HashMap<String, Integer>();
+	
+	public void printMenu() {
+		System.out.println("---menu---");
+		System.out.println("1.햄버거 : 15,000원");
+		System.out.println("2.피자 : 20,000원");
+		System.out.println("3.음료 : 2,000원");
+		System.out.println("4.과자 : 1,000원");
+		System.out.println("5.사탕 : 500원");
+		System.out.println("메뉴 선택 : ");
+	}
+	
+	public void put() {
+		menuList.put("햄버거", 15000);
+		menuList.put("피자", 20000);
+		menuList.put("음료", 2000);
+		menuList.put("과자", 1000);
+		menuList.put("사탕", 500);
+	}
+	
+	
+	
+	
+}

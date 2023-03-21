@@ -1,0 +1,11 @@
+package day18;
+
+public class ThreadEx01 {
+
+	public static void main(String[] args) {
+		//실행 => 메모리에 프로그램이 올라감
+		//(process) => CPU점유(thread)
+
+	}
+
+}

@@ -1,0 +1,46 @@
+package day15;
+
+public class Subject {
+	
+	 /* class - subject(별도 생성)
+	 * 과목클래스 : 한 과목의 정보를 나타내는 클래스
+	 * - 과목코드, 과목명, 학점, 시수, 교수명, 학기, 분류(교양, 전공), 수업 시간표, 강의실
+	 */
+	
+	private String subjectCode;  //과목코드
+	private String subjectName;  //과목명
+	private int subjectCredit;  //학점
+	private int professorTime;  //시수
+	private String professorName;  //교수명
+	private int term; //학기
+	private String subjectCatecory[] = new String[2];  //분류(교양, 전공)
+	private String classTime[] = new String[5];  //수업 시간표
+	private int classRoom[] = new int[5];  //강의실
+	
+
+	void subject(String name, String code) {
+		this.subjectName = subjectName;
+		this.subjectCode = subjectCode;
+	}
+	
+	public void printSubject() {
+		System.out.println("-----과목 정보-----");
+		System.out.println("과목코드 : "+subjectCode);
+		System.out.println("과목명 : "+subjectName);
+		System.out.println("학점 : "+subjectCredit);
+		System.out.println("시수 : "+professorTime);
+		System.out.println("교수명 : "+professorName);
+		System.out.println("학기 : "+term);
+		System.out.println("분류 : "+subjectCatecory);
+		System.out.println("수업 시간표 : "+classTime);
+		System.out.println("강의실 : "+classRoom+"강의실");
+	}
+	
+	public void 
+	
+	
+	
+	
+	
+
+}

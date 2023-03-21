@@ -1,0 +1,95 @@
+package day15;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class WordManager implements WordInterface{
+
+	private ArrayList<Word> word = new ArrayList<>();
+
+	public void Word() {
+		word.add(new Word("apple","사과"));
+		word.add(new Word("car","차"));
+		word.add(new Word("banana","바나나"));	
+	}
+
+	@Override
+	public void addWord(Scanner scan) {
+		System.out.println("추가할 단어 : ");
+		String word = scan.next();
+		System.out.println("단어 의미 : ");
+		String mean = scan.next();
+		this.word.add(new Word(word, mean));
+	}
+
+	@Override
+	public void printWord() {
+		System.out.println("<<Word Book>>");
+		for(int i=0; i<word.size(); i++) {
+			System.out.println(i);
+		}
+		System.out.println("-----------------");
+	}
+
+	@Override
+	public void wordSearch(Scanner scan) {
+		System.out.println("검색할 단어 입력 : ");
+		String searchWord = scan.next();
+		int index = -1;
+		for(int i=0; i<word.size(); i++) {
+			if(searchWord.equals(word.get(i).getWord())) {
+				index = i;
+				System.out.println(searchWord+word.get(i).getMean());
+			}else {
+				System.out.println(searchWord+"없는 단어입니다.");
+			}
+		}
+		
+	}
+
+	@Override
+	public void update(Scanner scan) {
+		System.out.println("수정할 단어 입력 : ");
+		String updateWord = scan.next();
+		System.out.println("수정할 단어 의미 입력 : ");
+		String updateMean = scan.next();
+		int index = -1;
+		for(int i=0; i<word.size(); i++) {
+			if(updateWord.equals(word.get(i).getWord())) {
+				index = i;
+				word.get(i).setMean(updateMean);
+				System.out.println(updateWord+"의 단어의 의미를 "+updateMean+"로 수정하였습니다.");
+				return;
+			}
+		}
+		if(index == -1) {
+			System.out.println(updateWord+"단어가 없습니다.");
+		}
+	}
+
+	@Override
+	public void delect(Scanner scan) {
+		System.out.println("삭제할 단어 입력 : ");
+		String delectword = scan.next();
+		int index = -1;
+		for(int i=0; i<word.size(); i++) {
+			if(delectword.equals(word.get(i).getWord())) {
+				index = i;
+				word.remove(i);
+				System.out.println(delectword+" 단어가 삭제 되었습니다.");
+				return;
+			}
+		}
+		if(index == -1) {
+			System.out.println(delectword+" 단어가 없습니다.");
+		}
+		
+	}
+	
+	
+
+
+	
+	
+	
+}

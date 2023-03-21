@@ -1,0 +1,33 @@
+package day16;
+
+import java.util.Scanner;
+
+public class EnglishDictionaryMain {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		Word word = new Word();
+		int menu = -1;
+		
+		do {
+			word.printMenu();
+			
+			menu = scan.nextInt();
+			
+			switch (menu) {
+			case 1: word.makeWord(); break;
+			case 2:
+			case 3: break;
+			default:
+			
+			}
+			
+			
+			
+		}while(menu != 3);
+		System.out.println("프로그램을 종료합니다.");
+		
+
+	}
+
+}

@@ -1,0 +1,58 @@
+package day15;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class WordManager implements WordInterface{
+
+	private ArrayList<Word> word = new ArrayList<>();
+
+	public void Word() {
+		word.add(new Word("apple","사과"));
+		word.add(new Word("car","차"));
+		word.add(new Word("banana","바나나"));	
+	}
+
+	@Override
+	public void addWord(Scanner scan) {
+		System.out.println("추가할 단어 : ");
+		String word = scan.next();
+		System.out.println("단어 의미 : ");
+		String mean = scan.next();
+		this.word.add(new Word(word, mean));
+	}
+
+	@Override
+	public void printWord() {
+		System.out.println("<<Word Book>>");
+		for(int i=0; i<word.size(); i++) {
+			System.out.println(i);
+		}
+		System.out.println("-----------------");
+	}
+
+	@Override
+	public void wordSearch(Scanner scan) {
+		
+		
+	}
+
+	@Override
+	public void update(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delect(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+
+	
+	
+	
+}

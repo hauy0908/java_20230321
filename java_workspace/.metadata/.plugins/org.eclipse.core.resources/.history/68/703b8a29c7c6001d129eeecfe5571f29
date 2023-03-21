@@ -1,0 +1,10 @@
+package day17;
+
+public class InPutStreamEx01 {
+
+	public static void main(String[] args) {
+		//FileInPutStream : 바이트 단위 기반 스트림
+		
+	}
+
+}

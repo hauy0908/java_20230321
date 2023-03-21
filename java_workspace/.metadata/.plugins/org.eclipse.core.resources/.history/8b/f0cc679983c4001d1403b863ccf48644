@@ -1,0 +1,11 @@
+package day16;
+
+public class StreamEx {
+	/* 문자열(이름)을 담는 리스트 생성후, 스트림으로 생성
+	 * 정렬하여 출력
+	 */
+	
+	
+	
+	
+}
